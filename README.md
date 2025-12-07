@@ -1,70 +1,97 @@
-# Getting Started with Create React App
+# Local Culture and Heritage Explorer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Local Culture and Heritage Explorer is a project designed to help users discover and learn about local culture and heritage. The application provides information, locations, and stories about various cultural and heritage sites.
 
-## Available Scripts
+> **Note:** This project is still under active development. Features and functionality may change frequently.
 
-In the project directory, you can run:
+## Features (In Progress)
 
-### `npm start`
+- Browse information about local culture and heritage sites
+- User-friendly interface built with React
+- Real-time data storage with Firebase
+- Basic search and filtering (planned)
+- Interactive maps and favorite locations (planned)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies Used
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **JavaScript**
+- **HTML**
+- **CSS**
+- **React**
+- **Firebase**
 
-### `npm test`
+## Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
 
-### `npm run build`
+- [Node.js & npm](https://nodejs.org/) (v16.x or higher recommended)
+- A [Firebase](https://firebase.google.com/) project (for backend/database needs)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/amruta-1234-kattimani/Local-Culture-and-Heritage-Explorer.git
+   cd Local-Culture-and-Heritage-Explorer
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+   This will install dependencies listed in `package.json`, including:
+   - `react`
+   - `react-dom`
+   - `firebase`
+   - Any other packages used (e.g., `react-router-dom` if included)
 
-### `npm run eject`
+3. **Set up Firebase**
+   - Go to the [Firebase Console](https://console.firebase.google.com/) and create a new project.
+   - In the project settings, find your web app’s Firebase configuration (`apiKey`, `authDomain`, etc.).
+   - Create a file called `.env` in the root of your project and add your Firebase configuration like:
+     ```
+     REACT_APP_FIREBASE_API_KEY=your_api_key
+     REACT_APP_FIREBASE_AUTH_DOMAIN=your_auth_domain
+     REACT_APP_FIREBASE_PROJECT_ID=your_project_id
+     REACT_APP_FIREBASE_STORAGE_BUCKET=your_storage_bucket
+     REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
+     REACT_APP_FIREBASE_APP_ID=your_app_id
+     ```
+   - Your project should import and initialize Firebase using these values (see your code’s `firebase.js` or equivalent).
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. **Start the app**
+   ```bash
+   npm start
+   ```
+   The app will run at [http://localhost:3000](http://localhost:3000)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Additional Commands
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **Build the project for production:**
+  ```bash
+  npm run build
+  ```
+- **Run tests (if available):**
+  ```bash
+  npm test
+  ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Roadmap
 
-## Learn More
+- [ ] Complete site information module
+- [ ] Implement user authentication via Firebase
+- [ ] Add search and filtering features
+- [ ] Enhance UI/UX with advanced React components
+- [ ] Integrate interactive maps
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Contributing
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Contributions are welcome! Please open an issue or a pull request for suggestions and improvements.
 
-### Code Splitting
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+*(TBD)*
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**This project is a work in progress — stay tuned for updates!**
